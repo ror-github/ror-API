@@ -1,0 +1,34 @@
+<% if !flash[:notice].blank? %>
+   <div class = "alert alert-info">
+      <%= flash[:notice] %>
+   </div>
+<% end %>
+<% if @survey.blank? %>
+<p>There are not any survey currently in the system.</p>
+<% else %>
+<p><b>These are the current survey in our system</b></p>
+
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+   <tr>
+	   <th>Title</th>
+	   <th>Description</th>
+      <th>Price</th>
+      <th>Status</th>
+	   <th colspan="3">Action</th>
+   </tr>
+   <% @survey.each do |s| %>
+   <tr>
+	   <td><%= s.title %></td>
+	   <td><%= s.description %></td>
+      <td><%= s.price %></td>
+      <td><%= s.status %></td>
+	   <td><%= link_to "View", {:action => 'show', :id => s.id} %></td>
+	   <td><%= link_to "Edit", {:action => 'edit', :id => s.id} %></td>
+	   <td><%= link_to "Delete", {:action => 'delete', :id => s.id}, :confirm => "Are you sure you want to delete this item?" %></td>
+   </tr>
+   <% end %>
+</table>
+
+<% end %>
+<br>
+<p><%= link_to "Add New Survey", {:action => 'new' }, :class => "create_button" %></p>

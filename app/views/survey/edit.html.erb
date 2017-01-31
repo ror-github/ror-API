@@ -1,0 +1,11 @@
+<h1>Edit Survey</h1>
+
+<%= form_for @survey, :url =>{:action => "update", :id =>@survey} do |f| %>
+
+<div><label for = "survey_title">Title :</label> <%= f.text_field 'title' %></div>
+<div><label for = "survey_description">Description :</label> <%= f.text_field  'description' %></div>
+<div><label for = "survey_price">Price :</label> <%= f.text_field  'price' %></div>
+<div><label for = "survey_status">Status :</label> <%= f.select :status, ['global', 'local', 'available', 'completed'], {}, { :class => 'selectoption' } %></div>
+
+<p><%= f.submit "Save Changes", :class => "create_button" %> <%= link_to 'Back', {:action => 'list'}, :class => "create_button" %></p>
+<% end %>

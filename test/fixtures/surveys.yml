@@ -1,0 +1,40 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+global: 
+  id: 1
+  title: "Test Global"
+  description: "Test Global"
+  price: "500"
+  status: "global"
+
+local_1: 
+  id: 2
+  title: "Test Local"
+  description: "Test Local"
+  price: "300"
+  status: "local"
+
+available: 
+  id: 3
+  title: "Test Available"
+  description: "Test Available"
+  price: "200"
+  status: "available"
+
+completed: 
+  id: 4
+  title: "Test Completed"
+  description: "Test Completed"
+  price: "300"
+  status: "completed"
+
+local_2: 
+  id: 5
+  title: "Test Local2"
+  description: "Test Local2"
+  price: "600"
+  status: "local"

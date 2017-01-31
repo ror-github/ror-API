@@ -1,0 +1,24 @@
+<h1>Add new survey</h1>
+
+<%= form_tag('/survey/create', multipart: true) do %>
+
+<div><label for = "survey_title">Title :</label>
+<%= text_field 'survey', 'title' %></div>
+
+<div><label for = "survey_description">Description :</label>
+<%= text_field 'survey', 'description' %></div>
+
+<div><label for = "survey_price">Price :</label>
+<%= text_field 'survey', 'price' %></div>
+
+<div><label for = "survey_status">Status :</label>
+<select name="survey[status]" id="survey_status" class="selectoption">
+	<option value="global">global</option>
+	<option value="local">local</option>
+	<option value="available">available</option>
+	<option value="completed">completed</option>
+</select></div>
+
+<p><%= submit_tag "Create", :class => "create_button" %> <%= link_to 'Back', {:action => 'list'}, :class => "create_button" %></p>
+
+<% end -%>

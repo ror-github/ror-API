@@ -1,0 +1,109 @@
+body {
+   font-family: Helvetica, Geneva, Arial, sans-serif;
+   font-size: small;
+   font-color: #000;
+   background-color: #fff;
+}
+
+a:link, a:active, a:visited {
+   color: #FFFFFF;
+}
+
+.create_button {
+	background: #F44336;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+	height: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input { 
+   margin-bottom: 5px;
+   margin-left: 5px;
+   height: 25px;
+}
+
+p { 
+   line-height: 150%;
+}
+
+div#container {
+   width: 760px;
+   margin: 0 auto;
+}
+
+div#header {
+    text-align: center;
+    padding: 5px;
+    background: #3F51B5;
+    color: #fff;
+	width: 100%;
+}
+
+div#content {
+   float: left;
+   width: 100%;
+   padding: 10px;
+}
+
+div#content h3 {
+   margin-top: 15px;
+}
+
+ul#books {
+   list-style-type: none;
+}
+
+ul#books li {
+   line-height: 140%;
+}
+
+div#sidebar {
+   width: 200px;
+   margin-left: 480px;
+}
+
+ul#subjects {
+   width: 700px;
+   text-align: center;
+   padding: 5px;
+   background-color: #ececec;
+   border: 1px solid #ccc;
+   margin-bottom: 20px;
+}
+
+ul#subjects li {
+   display: inline;
+   padding-left: 5px;
+}
+
+.field_with_errors input{
+	border: 1px solid red;
+	margin-left: 10px;
+}
+
+label{
+	float:left;
+	padding-top: 6px;
+  width: 20%
+}
+
+tr th{
+	padding: 5px;
+}
+
+td{
+	padding: 5px;
+}
+
+td a {
+ color: #f44336 !important;
+ }
+
+ .selectoption{
+  height: 30px;
+  width: 23%;
+  margin-left: 5px;
+ }
